@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TITO Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="siteHeader">
+  <a class="brand" id="brand" href="#">TITO Store</a>
+  <button id="langBtn">EN</button>
+  <a href="#cart">السلة (<span id="cartCount">0</span>)</a>
+</header>
+
+<!-- شريط الأقسام (ثابت فوق) -->
+<nav id="catBar" class="catbar" aria-label="الأقسام">
+  <button class="catbtn active" data-cat="home">الرئيسية <small>Home</small></button>
+  <button class="catbtn" data-cat="iphone">أيفون <small>iPhone</small></button>
+  <button class="catbtn" data-cat="samsung">سامسونج <small>Samsung</small></button>
+  <button class="catbtn" data-cat="accessories">الاكسسوارات <small>Accessories</small></button>
+</nav>
+
+<main>
+  <!-- ===== الرئيسية ===== -->
+  <div id="homeView">
+    <section class="hero">
+      <p>LUXURY MOBILE CASES</p>
+      <h1>حماية استثنائية.<br><span>فخامة لا تُخطئها العين.</span></h1>
+      <a class="btn" href="#categories">تصفح الأقسام</a>
+    </section>
+
+    <section id="categories">
+      <h2>الأقسام</h2>
+      <div class="cats">
+        <button class="cat-card" data-cat="iphone"><span class="cat-icon">📱</span><strong>أيفون</strong><small>iPhone</small></button>
+        <button class="cat-card" data-cat="samsung"><span class="cat-icon">📲</span><strong>سامسونج</strong><small>Samsung</small></button>
+        <button class="cat-card" data-cat="accessories"><span class="cat-icon">🔌</span><strong>الاكسسوارات</strong><small>Accessories</small></button>
+      </div>
+    </section>
+
+    <section id="featured">
+      <h2>منتجات مميزة</h2>
+      <div id="featuredProducts" class="products"></div>
+    </section>
+
+    <section id="about">
+      <h2>عن Protectoo</h2>
+      <p>Protectoo متجر متخصص في أجربة الموبايل الفاخرة والاكسسوارات. بنقدم حماية قوية وتصميمات مميزة لأيفون وسامسونج، مع شحن لكل المحافظات والدفع عند الاستلام.</p>
+    </section>
+  </div>
+
+  <!-- ===== صفحة القسم ===== -->
+  <section id="shop" hidden>
+    <h2 id="shopTitle">منتجاتنا</h2>
+    <div id="products" class="products"></div>
+  </section>
+
+  <section id="cart">
+    <h2>سلة المشتريات</h2>
+    <div id="cartItems"></div>
+    <p>الشحن: <span id="shippingCost"></span></p>
+    <p>الإجمالي: <span id="total"></span></p>
+  </section>
+
+  <section>
+    <h2>بيانات الطلب</h2>
+    <form id="orderForm">
+      <input name="name" placeholder="الاسم بالكامل" required>
+      <input name="phone" placeholder="رقم الموبايل" required>
+      <textarea name="address" placeholder="العنوان بالتفصيل" required></textarea>
+      <button class="btn" type="submit">اطلب عبر واتساب</button>
+    </form>
+  </section>
+</main>
+<footer>Protectoo © 2026</footer>
+
+<!-- صفحة المنتج -->
+<div id="modal" class="modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="إغلاق">✕</button>
+    <div class="modal-body">
+      <img id="mImg" class="m-img" alt="">
+      <div class="m-info">
+        <h2 id="mName"></h2>
+        <div class="price" id="mPrice"></div>
+        <div id="mModelBox">
+          <label class="m-label">موديل الهاتف</label>
+          <select id="mModel"></select>
+        </div>
+        <div id="mColorBox">
+          <label class="m-label">لون الجراب: <b id="mColorName">اختر اللون</b></label>
+          <div id="mColors" class="swatches"></div>
+        </div>
+        <button class="btn m-add" id="mAdd">أضف إلى السلة</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
