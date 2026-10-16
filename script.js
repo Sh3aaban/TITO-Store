@@ -325,7 +325,7 @@ function setupOrderForm() {
     message += `---------------------------%0A`;
     message += `*الإجمالي شامل الشحن:* ${totalSpan.textContent}`;
 
-    const whatsappNumber = "201000000000"; // استبدل هذا برقم واتساب الخاص بك
+    const whatsappNumber = "201274183333"; // استبدل هذا برقم واتساب الخاص بك
     const url = `https://wa.me/${whatsappNumber}?text=${message}`;
     window.open(url, '_blank');
   });
