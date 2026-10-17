@@ -1,6 +1,52 @@
-:root{--bg:#090909;--gold:#d9b16b;--text:#f6f0e5;--panel:#141410}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8}header{position:sticky;top:0;background:#10100ef5;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #383023}a{color:var(--gold);text-decoration:none}.brand{font:30px Georgia,serif;letter-spacing:1px}button,.btn{background:linear-gradient(110deg,#b68b47,#f1d89c);color:#171109;border:0;padding:12px 18px;cursor:pointer;border-radius:3px}.hero{text-align:center;padding:75px 15px;background:radial-gradient(ellipse,#302416,#090909 70%)}h1{font:clamp(35px,6vw,60px) Georgia,serif}h1 span{color:var(--gold)}main section{width:min(1100px,92%);margin:40px auto}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.product{padding:16px;background:var(--panel);border:1px solid #383023}.product h3{color:var(--gold)}.product select,input,textarea{display:block;width:100%;padding:12px;margin:8px 0;background:#111;color:white;border:1px solid #51432c}.price{color:var(--gold);font-weight:bold}footer{text-align:center;border-top:1px solid #383023;padding:25px;color:#aaa}
+:root{--bg:#090909;--gold:#d9b16b;--text:#f6f0e5;--panel:#141410}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
+header{position:sticky;top:0;background:#10100ef5;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #383023;z-index:30}
+a{color:var(--gold);text-decoration:none}
+.brand{font:30px Georgia,serif;letter-spacing:1px}
+button,.btn{background:linear-gradient(110deg,#b68b47,#f1d89c);color:#171109;border:0;padding:12px 18px;cursor:pointer;border-radius:3px}
+.hero{text-align:center;padding:75px 15px;background:radial-gradient(ellipse,#302416,#090909 70%)}
+h1{font:clamp(35px,6vw,60px) Georgia,serif}
+h1 span{color:var(--gold)}
+main section{width:min(1100px,92%);margin:40px auto}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
 
-.pimg{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;margin-bottom:8px;display:block}
+/* تعديل الكروت لمنع التداخل وضبط الأبعاد */
+.product{
+  background:var(--panel);
+  border:1px solid #383023;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  text-align:center;
+  border-radius:6px;
+  cursor:pointer;
+  transition:.2s
+}
+.product:hover{border-color:var(--gold);transform:translateY(-3px)}
+.product h3{
+  color:var(--gold);
+  font-size:14px;
+  line-height:1.4;
+  margin:8px 0;
+  height:40px;
+  overflow:hidden;
+}
+.product select,input,textarea{display:block;width:100%;padding:12px;margin:8px 0;background:#111;color:white;border:1px solid #51432c}
+.price{color:var(--gold);font-weight:bold}
+footer{text-align:center;border-top:1px solid #383023;padding:25px;color:#aaa}
+
+/* ضبط حجم الصورة ومظهرها */
+.pimg{
+  width:100%;
+  height:180px;
+  object-fit:contain;
+  background:#000;
+  border-radius:4px;
+  margin-bottom:8px;
+  display:block
+}
 
 /* الرئيسية: كروت الأقسام */
 .cats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
@@ -15,7 +61,6 @@
 /* About */
 #about p{max-width:760px;color:#d8cfbf}
 #shop{scroll-margin-top:var(--stick,130px)}
-header{z-index:30}
 
 /* شريط الأقسام الثابت */
 .catbar{position:sticky;top:70px;z-index:20;display:flex;gap:8px;justify-content:center;padding:10px 4%;background:#0d0d0bf5;border-bottom:1px solid #383023;overflow-x:auto}
@@ -23,11 +68,7 @@ header{z-index:30}
 .catbtn small{opacity:.7;margin-inline-start:4px;font-size:12px}
 .catbtn.active{background:linear-gradient(110deg,#b68b47,#f1d89c);color:#171109;font-weight:bold;border-color:transparent}
 
-/* كروت المنتجات */
-.product{cursor:pointer;transition:.2s;display:flex;flex-direction:column}
-.product:hover{border-color:var(--gold);transform:translateY(-3px)}
 .product button{margin-top:auto;width:100%}
-.pimg{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;margin-bottom:8px;display:block}
 
 /* صفحة المنتج */
 .modal{position:fixed;inset:0;z-index:50;background:#000000d9;display:flex;align-items:center;justify-content:center;padding:16px;overflow:auto}
@@ -44,4 +85,14 @@ header{z-index:30}
 .swatch.sel{border-color:var(--gold);outline:2px solid var(--gold);outline-offset:3px}
 .m-add{width:100%;margin-top:18px;padding:14px;font-size:17px}
 
-@media(max-width:700px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:48px 12px}header{gap:8px;flex-wrap:wrap}.catbar{justify-content:flex-start}.cats{grid-template-columns:1fr}.cat-card{padding:20px 12px}.catbtn{padding:8px 14px;font-size:14px}.modal-body{grid-template-columns:1fr}.m-img{aspect-ratio:1/1}}
+@media(max-width:700px){
+  .products{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero{padding:48px 12px}
+  header{gap:8px;flex-wrap:wrap}
+  .catbar{justify-content:flex-start}
+  .cats{grid-template-columns:1fr}
+  .cat-card{padding:20px 12px}
+  .catbtn{padding:8px 14px;font-size:14px}
+  .modal-body{grid-template-columns:1fr}
+  .m-img{aspect-ratio:1/1}
+}
