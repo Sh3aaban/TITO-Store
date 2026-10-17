@@ -73,50 +73,49 @@ const productsData = [
   { id: 69, cat: "samsung", name: "جراب سامسونج معدني بالكامل واقي للصدمات", price: 400, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["Galaxy S24 Ultra"], colors: [{ name: "ذهبي معدني", hex: "#d4af37" }] },
   { id: 70, cat: "samsung", name: "جراب سامسونج فخم بتفاصيل بارزة", price: 370, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["Galaxy S24+", "Galaxy S23+"], colors: [{ name: "أسود وفضي", hex: "#1a1a1a" }] },
 
-  // الاكسسوارات (من 71 إلى 100)
-  {
-  id: 71,
-  cat: "accessories",
-  name: "AirPods Pro 3 - The world's best in-ear Active Noise Cancellation",
-  price: 650,
-  img: "AIRPODS.jpeg",
-  models: ["عام لجميع الأجهزة"],
-  colors: [
-    { name: "أسود", hex: "#222" },
-    { name: "أبيض", hex: "#fff" }
-  ]
-},
-  { id: 72, cat: "accessories", name: "حامل هاتف مغناطيسي للسيارة بفتحة التهوية", price: 250, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#000" }] },
-  { id: 73, cat: "accessories", name: "شاحن جداري سريع بتقنية PD قوة 25 واط", price: 320, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
-  { id: 74, cat: "accessories", name: "سماعة بلوتوث لاسلكية عازلة للضوضاء", price: 550, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود فخم", hex: "#111" }] },
-  { id: 75, cat: "accessories", name: "وصلة شحن متعددة الرؤوس 3 في 1 قوية", price: 180, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "رمادي معدني", hex: "#808080" }] },
-  { id: 76, cat: "accessories", name: "قاعدة شحن لاسلكية مزدوجة سريعة", price: 590, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#000" }] },
-  { id: 77, cat: "accessories", name: "حامل مكتب للهاتف قابل تعديل الارتفاع", price: 220, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "فضي", hex: "#c0c0c0" }] },
-  { id: 78, cat: "accessories", name: "عدسات كاميرا إضافية للهاتف احترافية", price: 400, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#111" }] },
-  { id: 79, cat: "accessories", name: "إضاءة سيلفي دائرية Ring Light للمكتب", price: 350, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
-  { id: 80, cat: "accessories", name: "محفظة مغناطيسية تلتصق بخلفية الهاتف", price: 290, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "بني جلد", hex: "#5c4033" }, { name: "أسود", hex: "#000" }] },
-  { id: 81, cat: "accessories", name: "قلم تاتش ذكي دقيق للرسم والكتابة", price: 310, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }, { name: "أسود", hex: "#111" }] },
-  { id: 82, cat: "accessories", name: "حامل هاتف مغناطيسي يثبت على تابلوه السيارة", price: 280, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود مطفي", hex: "#222" }] },
-  { id: 83, cat: "accessories", name: "شاحن سيارة سريع بمنفذين USB و Type-C", price: 260, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "فضي معدني", hex: "#a9a9a9" }] },
-  { id: 84, cat: "accessories", name: "سلك شحن قماشي مقاوم للقطع طول 2 متر", price: 150, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أحمر", hex: "#ff0000" }, { name: "أسود", hex: "#000" }] },
-  { id: 85, cat: "accessories", name: "منظم أسلاك وتوصيلات المكاتب السليكوني", price: 120, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "رمادي", hex: "#808080" }] },
-  { id: 86, cat: "accessories", name: "حامل هاتف للدراجات النارية والهوائية", price: 330, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#000" }] },
-  { id: 87, cat: "accessories", name: "مروحة تبريد صغيرة للهاتف أثناء الألعاب", price: 390, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود بإضاءة RGB", hex: "#1a1a1a" }] },
-  { id: 88, cat: "accessories", name: "قبضة تحكم للألعاب للبث والهواتف", price: 420, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود أحمر", hex: "#330000" }] },
-  { id: 89, cat: "accessories", name: "باور بانك ضخم بسعة 20000 مللي أمبير", price: 890, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#111" }] },
-  { id: 90, cat: "accessories", name: "قاعدة شحن لاسلكية 3 في 1 للساعة والهاتف والسماعة", price: 750, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }, { name: "أسود", hex: "#000" }] },
-  { id: 91, cat: "accessories", name: "حامل تثبيت مغناطيسي للجدران", price: 160, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "فضي", hex: "#d3d3d3" }] },
-  { id: 92, cat: "accessories", name: "مجموعة تنظيف الشاشات والأجهزة الاحترافية", price: 140, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أزرق", hex: "#0000ff" }] },
-  { id: 93, cat: "accessories", name: "محول صوت من Type-C إلى منفذ سماعة 3.5مم", price: 130, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#ffffff" }] },
-  { id: 94, cat: "accessories", name: "حزام رياضي للذراع للجري وممارسة الرياضة", price: 210, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#000000" }] },
-  { id: 95, cat: "accessories", name: "شاحن جداري فائق السرعة 65 واط بتقنية GaN", price: 580, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود مطفي", hex: "#111" }] },
-  { id: 96, cat: "accessories", name: "حامل هاتف يثبت على الرقبة للمشاهدة المريحة", price: 240, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أزرق", hex: "#4682b4" }] },
-  { id: 97, cat: "accessories", name: "حافظة بطاقات وحماية للهواتف الذكية", price: 190, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود جلد", hex: "#1a1a1a" }] },
-  { id: 98, cat: "accessories", name: "سماعة رأس ألعاب (Gaming Headset) بإضاءة", price: 790, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود مع أحمر", hex: "#550000" }] },
-  { id: 99, cat: "accessories", name: "قاعدة تثبيت مغناطيسية دائرية للتابلت والهاتف", price: 270, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "فضي", hex: "#e0e0e0" }] },
-  { id: 100, cat: "accessories", name: "حقيبة سفر صغيرة منظمة لإكسسوارات الشواحن", price: 340, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "رمادي غامق", hex: "#2f4f4f" }] }
-];
+ // منتجات قسم الاكسسوارات - الأسعار (price: 0) لازم تتعدل
+// أسماء الصور (img) مؤقتة: غيّرها لأسماء الملفات الفعلية عندك
 
+// تعديل المنتج رقم 71: اللون الأول كان اسمه "ابيض" وقيمته #222
+// { id: 71, cat: "accessories", name: "AirPods Pro 3 - Active Noise Cancellation", price: 650, img: "AIRPODS.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
+
+const accessoriesNew = [
+  // ---------- كابلات ----------
+  { id: 72, cat: "accessories", name: "Anker 322 USB-A to USB-C Cable 1.8m Braided", price: 0, img: "anker-322-usba-usbc.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 73, cat: "accessories", name: "Anker USB-A to USB-C Durable Braided Cable 3ft", price: 0, img: "anker-braided-usba-usbc-3ft.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 74, cat: "accessories", name: "Anker PowerLine III USB-C to USB-C Cable 0.9m 60W", price: 0, img: "anker-powerline3-cc.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 75, cat: "accessories", name: "Anker USB-C to Lightning Cable 0.9m 60W", price: 0, img: "anker-c-lightning.jpg", models: ["iPhone"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 76, cat: "accessories", name: "Anker USB-C to Lightning Braided Cable 0.9m (MFi)", price: 0, img: "anker-c-lightning-braided.jpg", models: ["iPhone"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 77, cat: "accessories", name: "E-Train MP001 Type-C to Type-C Cable 60W", price: 0, img: "etrain-mp001.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 78, cat: "accessories", name: "Sendem T56 PD 30W Zinc Alloy Type-C to Lightning 1m", price: 0, img: "sendem-t56.jpg", models: ["iPhone"], colors: [{ name: "كحلي", hex: "#1f2a44" }] },
+  { id: 79, cat: "accessories", name: "Sendem M76-2M PD 30W Type-C to Lightning 2m", price: 0, img: "sendem-m76-2m.jpg", models: ["iPhone"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 80, cat: "accessories", name: "Sendem M64A 100W Super Fast Charging Micro Cable 1m", price: 0, img: "sendem-m64a.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 81, cat: "accessories", name: "Start ST-A022 60W Type-C to Lightning Cable (LED)", price: 0, img: "start-st-a022.jpg", models: ["iPhone"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 82, cat: "accessories", name: "Start ST-A017 4-in-1 Super Fast Data Cable 60W", price: 0, img: "start-st-a017.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 83, cat: "accessories", name: "Start ST-A013 Type-C to Lightning Cable 30W Metal", price: 0, img: "start-st-a013.jpg", models: ["iPhone"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 84, cat: "accessories", name: "X-Scoot CL-157 Micro Super Fast Cable 60W 1m", price: 0, img: "xscoot-cl157.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 85, cat: "accessories", name: "RockRose Beta AL Mini Lightning Cable 30cm", price: 0, img: "rockrose-beta-al-mini.jpg", models: ["iPhone"], colors: [{ name: "أسود", hex: "#222" }] },
+
+  // ---------- شواحن ----------
+  { id: 86, cat: "accessories", name: "Anker PowerPort III 20W Cube Charger", price: 0, img: "anker-powerport3-20w.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 87, cat: "accessories", name: "Ankar PowerPort III 20W Cube Mini Quick Charger", price: 0, img: "ankar-powerport3-20w.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 88, cat: "accessories", name: "Start ST-34E 12W Dual USB Wall Charger", price: 0, img: "start-st-34e.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 89, cat: "accessories", name: "Wuw T82 Charger Set 2.1A with Type-C Cable", price: 0, img: "wuw-t82.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 90, cat: "accessories", name: "Recci RO08 Car Charger with FM Transmitter 15W+15W", price: 0, img: "recci-ro08.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#222" }] },
+
+  // ---------- باور بانك ----------
+  { id: 91, cat: "accessories", name: "Start ES04 4-in-1 Power Bank 10000mAh with Digital Display", price: 0, img: "start-es04.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 92, cat: "accessories", name: "Start ES05 4-in-1 Power Bank 20000mAh with Digital Display", price: 0, img: "start-es05.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 93, cat: "accessories", name: "Joyroom 10000mAh Magnetic Wireless Power Bank 20W PD", price: 0, img: "joyroom-magnetic-10000.jpg", models: ["iPhone"], colors: [{ name: "رمادي داكن", hex: "#444" }] },
+
+  // ---------- سماعات ----------
+  { id: 94, cat: "accessories", name: "Genai GM-M18 Wired Earphones 3.5mm", price: 0, img: "genai-gm-m18.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 95, cat: "accessories", name: "Anker K12 Lightning Wired Earphones", price: 0, img: "anker-k12-lightning.jpg", models: ["iPhone"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 96, cat: "accessories", name: "Lenyes LF105-AUX Wired Headphones 3.5mm", price: 0, img: "lenyes-lf105-aux.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
+  { id: 97, cat: "accessories", name: "Samsung AKG Type-C Earphones", price: 0, img: "samsung-akg-typec.jpg", models: ["Samsung", "عام لأجهزة Type-C"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 98, cat: "accessories", name: "Soundcore Life Q30 Hybrid ANC Headphones", price: 0, img: "soundcore-life-q30.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#222" }] },
+  { id: 99, cat: "accessories", name: "Sodo SD-1004 Headphone", price: 0, img: "sodo-sd1004.jpg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#222" }] },
+];
 let cart = [];
 let selectedProduct = null;
 let chosenColor = "";
