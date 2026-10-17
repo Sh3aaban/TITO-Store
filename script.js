@@ -76,7 +76,7 @@ const productsData = [
   // الاكسسوارات (من 71 إلى 100)
   { id: 71, cat: "accessories", name: "بAirPods Pro 3
 The world’s best in‑ear
-Active Noise Cancellation.", price: 650, img: "AIRPODS.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود مات", hex: "#222" }, { name: "أبيض", hex: "#fff" }] },
+Active Noise Cancellation.", price: 650, img: "AIRPODS.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "ابيض", hex: "#222" }, { name: "أبيض", hex: "#fff" }] },
   { id: 72, cat: "accessories", name: "حامل هاتف مغناطيسي للسيارة بفتحة التهوية", price: 250, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#000" }] },
   { id: 73, cat: "accessories", name: "شاحن جداري سريع بتقنية PD قوة 25 واط", price: 320, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
   { id: 74, cat: "accessories", name: "سماعة بلوتوث لاسلكية عازلة للضوضاء", price: 550, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود فخم", hex: "#111" }] },
