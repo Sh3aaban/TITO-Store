@@ -1,4 +1,3 @@
-// قائمة بـ المنتجات موزعة على الأقسام
 const productsData = [
   { id: 1, cat: "iphone", name: "جراب أيفون 15 برو ماكس فاخر", price: 350, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["iPhone 15 Pro Max", "iPhone 15 Pro"], colors: [{ name: "أسود", hex: "#111" }, { name: "فضي", hex: "#ccc" }] },
   { id: 2, cat: "iphone", name: "جراب أيفون مانع للصدمات", price: 300, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["iPhone 14", "iPhone 14 Pro"], colors: [{ name: "كحلي", hex: "#1b2a4a" }, { name: "رمادي", hex: "#555" }] },
@@ -110,7 +109,6 @@ let selectedProduct = null;
 let chosenColor = "";
 let chosenModel = "";
 
-// عناصر الواجهة
 const homeView = document.getElementById("homeView");
 const shopSection = document.getElementById("shop");
 const productsGrid = document.getElementById("products");
@@ -121,7 +119,6 @@ const cartItemsContainer = document.getElementById("cartItems");
 const totalSpan = document.getElementById("total");
 const shippingCostSpan = document.getElementById("shippingCost");
 
-// Modal Elements
 const modal = document.getElementById("modal");
 const modalClose = document.getElementById("modalClose");
 const mImg = document.getElementById("mImg");
@@ -144,7 +141,6 @@ function priceText(p) {
   return p.price > 0 ? p.price + " ج.م" : "اسأل عن السعر";
 }
 
-// عرض 4 منتجات مميزة في الرئيسية
 function renderFeatured() {
   if (!featuredProducts) return;
   featuredProducts.innerHTML = productsData.slice(0, 4).map(p => createProductCard(p)).join("");
@@ -152,9 +148,10 @@ function renderFeatured() {
 }
 
 function createProductCard(p) {
+  // إذا لم تكن الصورة موجودة، سيتم استخدام الصورة البديلة تلقائياً لتجنب الرمز المكسور
   return `
     <div class="product" data-id="${p.id}">
-      <img class="pimg" src="${p.img}" alt="${p.name}" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x400?text=TITO+Store';">
+      <img class="pimg" src="${p.img}" alt="${p.name}" onerror="this.onerror=null;this.src='WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg';">
       <h3>${p.name}</h3>
       <div class="price">${priceText(p)}</div>
       <button class="btn view-btn">عرض التفاصيل</button>
@@ -170,7 +167,6 @@ function attachCardEvents() {
   });
 }
 
-// التنقل بين الأقسام
 function setupNavigation() {
   const catButtons = document.querySelectorAll(".catbtn, .cat-card");
   catButtons.forEach(btn => {
@@ -214,7 +210,6 @@ function renderShopCategory(cat) {
   attachCardEvents();
 }
 
-// نافذة تفاصيل المنتج (Modal)
 function setupModal() {
   modalClose.addEventListener("click", closeModal);
   modal.addEventListener("click", (e) => {
@@ -245,7 +240,7 @@ function openModal(id) {
   mImg.src = selectedProduct.img;
   mImg.onerror = function() {
     this.onerror = null;
-    this.src = 'https://via.placeholder.com/300x400?text=TITO+Store';
+    this.src = 'WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg';
   };
   mName.textContent = selectedProduct.name;
   mPrice.textContent = priceText(selectedProduct);
@@ -267,7 +262,6 @@ function openModal(id) {
     });
   });
 
-  // الاكسسوارات: مفيش موديل هاتف ولا لون جراب
   const isAcc = selectedProduct.cat === "accessories";
   document.getElementById("mModelBox").hidden = isAcc;
   document.getElementById("mColorBox").hidden = isAcc;
@@ -280,12 +274,10 @@ function closeModal() {
   selectedProduct = null;
 }
 
-// تفاصيل المنتج في السلة (الموديل واللون للجرابات فقط)
 function itemDetails(item) {
   return [item.model, item.color].filter(Boolean).join(" - ");
 }
 
-// تحديث السلة
 function updateCartUI() {
   cartCount.textContent = cart.length;
   if (cart.length === 0) {
@@ -318,7 +310,6 @@ window.removeFromCart = function (index) {
   updateCartUI();
 };
 
-// نموذج الطلب وإرساله لواتساب
 function setupOrderForm() {
   const form = document.getElementById("orderForm");
   form.addEventListener("submit", (e) => {
