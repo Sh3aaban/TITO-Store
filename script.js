@@ -74,8 +74,18 @@ const productsData = [
   { id: 70, cat: "samsung", name: "جراب سامسونج فخم بتفاصيل بارزة", price: 370, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["Galaxy S24+", "Galaxy S23+"], colors: [{ name: "أسود وفضي", hex: "#1a1a1a" }] },
 
   // الاكسسوارات (من 71 إلى 100)
-  { id: 71, cat: "accessories", name: "AirPods Pro 3
-The world’s best in‑earActive Noise Cancellation.", price: 650, img: "AIRPODS.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "ابيض", hex: "#222" }, { name: "أبيض", hex: "#fff" }] },
+  {
+  id: 71,
+  cat: "accessories",
+  name: "AirPods Pro 3 - The world's best in-ear Active Noise Cancellation",
+  price: 650,
+  img: "AIRPODS.jpeg",
+  models: ["عام لجميع الأجهزة"],
+  colors: [
+    { name: "أسود", hex: "#222" },
+    { name: "أبيض", hex: "#fff" }
+  ]
+},
   { id: 72, cat: "accessories", name: "حامل هاتف مغناطيسي للسيارة بفتحة التهوية", price: 250, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود", hex: "#000" }] },
   { id: 73, cat: "accessories", name: "شاحن جداري سريع بتقنية PD قوة 25 واط", price: 320, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أبيض", hex: "#fff" }] },
   { id: 74, cat: "accessories", name: "سماعة بلوتوث لاسلكية عازلة للضوضاء", price: 550, img: "WhatsApp Image 2026-10-16 at 4.34.13 PM.jpeg", models: ["عام لجميع الأجهزة"], colors: [{ name: "أسود فخم", hex: "#111" }] },
